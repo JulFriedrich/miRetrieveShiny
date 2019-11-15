@@ -25,14 +25,18 @@ upload_table_compare_shiny <- function(file_compare,
                                  subset_research = TRUE,
                                  extract_letters = FALSE) {
 
-    df_compare <- upload_abstracts_shiny(medline_file = file_compare,
+    df_compare <- upload_abstracts_error_shiny(medline_file = file_compare,
                                           threshold = threshold,
                                           topic = topic_compare,
                                           subset_research = subset_research,
                                           extract_letters = extract_letters)
-    df_combined <- miRetrieve::combine_df(df_present, df_compare)
 
-    return(df_combined)
+    if(is.character(df_compare)) {
+        return(df_compare)
+    } else {
+        df_combined <- miRetrieve::combine_df(df_present, df_compare)
+        return(df_combined)
+    }
 }
 
 #' Get common miRNA names in ordered fashion
