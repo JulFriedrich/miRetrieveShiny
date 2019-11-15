@@ -85,3 +85,31 @@ set_topic_shiny <- function(topic_input, topic_set) {
     }
     return(topic)
 }
+
+#' Upload abstracts and catch errors
+#'
+#' Catch error messages when uploading abstracts and return a character value.
+#'
+#' @param ... Arguments passed to `upload_abstracts_shiny()`.
+#'
+#' @return Either tibble if the functions works, or string with error message
+#' if a wrong file was used.
+#'
+#' @export
+upload_abstracts_error_shiny <- function(...) {
+    return_value <- tryCatch({upload_abstracts_shiny(...)},
+                             warning = function(cond) {
+                                 return("It seems that the uploaded file does
+                                        not adhere to the MEDLINE format. Please
+                                        upload a MEDLINE file. For more information,
+                                        see 'Help'.")
+                             },
+                             error = function(cond) {
+                                 return("It seems that the chosen file does
+                                        not adhere to the MEDLINE format. Please
+                                        upload a MEDLINE file. For more information,
+                                        see 'Help'.")
+                             })
+
+    return(return_value)
+}
