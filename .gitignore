@@ -1,6 +1,5 @@
 .Rproj.user
 .Rhistory
-.RData
 .Ruserdata
 Shiny package function test.nb.html
 Shiny package function test.Rmd
@@ -12,3 +11,4 @@ miRetrieve_vignette.Rmd
 miRetrieve_vignette.html
 miRetrieve_vignette_lst.Rmd
 miRetrieve_word.Rmd
+miRTarBase_shiny.xlsx
