@@ -1,7 +1,7 @@
 library(magrittr)
 
 # Path to adjusted miRTarBase 8.0
-mirtarbase_file <- "/Users/Julian/Documents/Jupyter/miRetrieve Shiny pkg/miRetrieveShiny/data-raw/miRTarBase_shiny.xlsx"
+mirtarbase_file <- "/Users/Julian/Documents/Jupyter/miRetrieve Shiny pkg/miRTarBase_shiny.xlsx"
 
 # Stem for miRNAs
 # Used to extract only miRNA stem from miRTarBase (e.g. "miR-200" instead
