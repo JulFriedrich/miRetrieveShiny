@@ -4,7 +4,7 @@
 #' columns "Type" and "Language" are dropped in miRetrieve Shiny after
 #' upload.
 #'
-#' @param medline_file Medline-file.
+#' @param pubmed_file PubMed-file.
 #' @param threshold. Integer. Specifies how often a miRNA must be mentioned
 #' in Abstracts to be extracted.
 #' @param topic String. Specifies topic name.
@@ -16,7 +16,7 @@
 #' @return Uploaded data frame.
 #'
 #' @export
-upload_abstracts_shiny <- function(medline_file,
+upload_abstracts_shiny <- function(pubmed_file,
                                    threshold = 1,
                                    topic = NULL,
                                    subset_research = TRUE,
@@ -25,7 +25,7 @@ upload_abstracts_shiny <- function(medline_file,
         topic <- "Topic"
     }
 
-    df <- miRetrieve::read_pubmed_medline(medline_file = medline_file,
+    df <- miRetrieve::read_pubmed(pubmed_file = pubmed_file,
                                           topic = topic)
 
     if(subset_research) {
@@ -100,14 +100,14 @@ upload_abstracts_error_shiny <- function(...) {
     return_value <- tryCatch({upload_abstracts_shiny(...)},
                              warning = function(cond) {
                                  return("It seems that the uploaded file does
-                                        not adhere to the MEDLINE format. Please
-                                        upload a MEDLINE file. For more information,
+                                        not adhere to the PubMed format. Please
+                                        upload a PubMed file. For more information,
                                         see 'Help'.")
                              },
                              error = function(cond) {
                                  return("It seems that the chosen file does
-                                        not adhere to the MEDLINE format. Please
-                                        upload a MEDLINE file. For more information,
+                                        not adhere to the PubMed format. Please
+                                        upload a PubMed file. For more information,
                                         see 'Help'.")
                              })
 

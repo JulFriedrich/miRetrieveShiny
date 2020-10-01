@@ -25,7 +25,7 @@ upload_table_compare_shiny <- function(file_compare,
                                  subset_research = TRUE,
                                  extract_letters = FALSE) {
 
-    df_compare <- upload_abstracts_error_shiny(medline_file = file_compare,
+    df_compare <- upload_abstracts_error_shiny(pubmed_file = file_compare,
                                           threshold = threshold,
                                           topic = topic_compare,
                                           subset_research = subset_research,
