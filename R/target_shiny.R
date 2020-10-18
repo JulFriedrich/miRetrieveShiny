@@ -97,9 +97,9 @@ get_target_target_names_shiny <- function(df_target) {
 
 add_mirtarbase_caption_shiny <- function(plot) {
     plot +
-        ggplot2::labs(caption = "Source: miRTarBase 7.0
-        miRTarBase update 2018: a resource for experimentally validated microRNA-target interactions.
-                      Chou CH, Shrestha S, Yang CD, et al., 2018, Nucleic Acids Research.") +
+        ggplot2::labs(caption = "Source: miRTarBase 8.0
+        miRTarBase 2020: updates to the experimentally validated microRNA–target interaction database.
+                      Huang HY, Lin YC, Li J, Huang KY, et al., 2020, Nucleic Acids Research.") +
         ggplot2::theme(plot.caption = ggplot2::element_text(size = 6))
 }
 
