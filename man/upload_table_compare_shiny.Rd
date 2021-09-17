@@ -4,9 +4,14 @@
 \alias{upload_table_compare_shiny}
 \title{Upload second data set to compare}
 \usage{
-upload_table_compare_shiny(file_compare, df_present,
-  topic_compare = "Topic_compare", threshold = 1,
-  subset_research = TRUE, extract_letters = FALSE)
+upload_table_compare_shiny(
+  file_compare,
+  df_present,
+  topic_compare = "Topic_compare",
+  threshold = 1,
+  subset_research = TRUE,
+  extract_letters = FALSE
+)
 }
 \arguments{
 \item{file_compare}{String. File path to upload.}

@@ -4,8 +4,7 @@
 \alias{plot_mir_terms_shiny}
 \title{Plot miRNA-terms association}
 \usage{
-plot_mir_terms_shiny(df, mir, top = 20, token = "words",
-  normalize = TRUE)
+plot_mir_terms_shiny(df, mir, top = 20, token = "words", normalize = TRUE)
 }
 \arguments{
 \item{df}{Data frame.}

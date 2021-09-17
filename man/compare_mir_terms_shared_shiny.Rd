@@ -4,8 +4,14 @@
 \alias{compare_mir_terms_shared_shiny}
 \title{Compare shared terms for miR in data frame}
 \usage{
-compare_mir_terms_shared_shiny(df, mir, top = 20, token = "words",
-  type = "standard", normalize = TRUE)
+compare_mir_terms_shared_shiny(
+  df,
+  mir,
+  top = 20,
+  token = "words",
+  type = "standard",
+  normalize = TRUE
+)
 }
 \arguments{
 \item{df}{Data frame with two topics and miRNA names.}

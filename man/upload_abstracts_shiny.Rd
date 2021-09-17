@@ -4,11 +4,16 @@
 \alias{upload_abstracts_shiny}
 \title{Upload abstracts for Shiny}
 \usage{
-upload_abstracts_shiny(medline_file, threshold = 1, topic = NULL,
-  subset_research = TRUE, extract_letters = FALSE)
+upload_abstracts_shiny(
+  pubmed_file,
+  threshold = 1,
+  topic = NULL,
+  subset_research = TRUE,
+  extract_letters = FALSE
+)
 }
 \arguments{
-\item{medline_file}{Medline-file.}
+\item{pubmed_file}{PubMed-file.}
 
 \item{topic}{String. Specifies topic name.}
 

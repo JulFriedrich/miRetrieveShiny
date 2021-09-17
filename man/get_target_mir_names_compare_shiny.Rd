@@ -4,8 +4,11 @@
 \alias{get_target_mir_names_compare_shiny}
 \title{Extract miRNA names for target operations to compare}
 \usage{
-get_target_mir_names_compare_shiny(df_abstracts, df_target,
-  mir_names_topic_ordered)
+get_target_mir_names_compare_shiny(
+  df_abstracts,
+  df_target,
+  mir_names_topic_ordered
+)
 }
 \arguments{
 \item{df_abstracts}{Data frame containing PMIDs and abstracts of two topics.}

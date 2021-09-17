@@ -4,8 +4,15 @@
 \alias{compare_mir_terms_shiny}
 \title{Compare miRNA-terms association between two abstracts.}
 \usage{
-compare_mir_terms_shiny(df, mir, unique_shared = "unique", top = 20,
-  token = "words", type = "standard", normalize = TRUE)
+compare_mir_terms_shiny(
+  df,
+  mir,
+  unique_shared = "unique",
+  top = 20,
+  token = "words",
+  type = "standard",
+  normalize = TRUE
+)
 }
 \arguments{
 \item{df}{Data frame with two topics and miRNA names.}

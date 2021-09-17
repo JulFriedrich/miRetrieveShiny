@@ -4,8 +4,12 @@
 \alias{subset_columns_research_shiny}
 \title{Subset data frame for abstracts of research articles}
 \usage{
-subset_columns_research_shiny(df, col.lang = Language, col.type = Type,
-  subset = TRUE)
+subset_columns_research_shiny(
+  df,
+  col.lang = Language,
+  col.type = Type,
+  subset = TRUE
+)
 }
 \arguments{
 \item{df}{Data frame containing article types.}

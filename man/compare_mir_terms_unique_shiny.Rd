@@ -4,8 +4,13 @@
 \alias{compare_mir_terms_unique_shiny}
 \title{Compare unique terms for miR in data frame}
 \usage{
-compare_mir_terms_unique_shiny(df, mir, top = 20, token = "words",
-  normalize = TRUE)
+compare_mir_terms_unique_shiny(
+  df,
+  mir,
+  top = 20,
+  token = "words",
+  normalize = TRUE
+)
 }
 \arguments{
 \item{df}{Data frame with two topics and miRNA names.}

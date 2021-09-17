@@ -4,8 +4,7 @@
 \alias{sort_mir_perc_shiny}
 \title{Helper - Sort miRNAs of two topic by average relative count}
 \usage{
-sort_mir_perc_shiny(df, col.mir = miRNA, col.pmid = PMID,
-  col.topic = Topic)
+sort_mir_perc_shiny(df, col.mir = miRNA, col.pmid = PMID, col.topic = Topic)
 }
 \arguments{
 \item{df}{Data frame after extracting miRNAs}
