@@ -20,7 +20,7 @@ create_target_df_shiny <- function(df_abstracts) {
 
     df_targets <- df_abstracts %>%
         # Join with miRTarBase 8.0
-        dplyr::left_join(miRetrieveShiny::mirtarbase) %>%
+        dplyr::left_join(mirtarbase) %>%
         # Drop NA
         tidyr::drop_na(miRNA_tarbase) %>%
         # Select columns of interest
